@@ -20,7 +20,7 @@ export const  Provider = (props) => {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("email", loginData.email);
         nav("/contacts");
-        window.alert("Login Successful");
+        window.alert("User Login Successful");
         document.location.reload();
         setEmail(loginData.email);
       })
@@ -37,7 +37,7 @@ export const  Provider = (props) => {
         .post("https://contact-manager-backend-dpj4.onrender.com/register", userData)
         .then((res) => {
           nav("/");
-          window.alert("Registration Successful");
+          window.alert("User Registration Successful");
         })
         .catch((err) => window.alert(err.response.data.error));
     } catch (e) {
