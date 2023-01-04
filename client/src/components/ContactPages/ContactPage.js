@@ -40,7 +40,6 @@ function ContactPage() {
     let dummyarr = []
     const checkedindi = (e) => {
         dummyarr.push(e.target.value)
-        // console.log(dummyarr);
         setdeletearr((prev) => {
             return [...prev, ...dummyarr]
         })
