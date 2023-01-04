@@ -15,7 +15,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register /> } />
-               {/* eslint-disable-next-line  */}
                <Route element={<Protected_route/>}/>
             <Route path="/contacts" element={<ContactPage /> } />
           </Routes>

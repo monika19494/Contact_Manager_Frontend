@@ -36,10 +36,10 @@ const Login = () => {
     if (!values.email) {
       err.email = "*email is required";
     } else if (!emailRegex.test(values.email)) {
-      err.email = "*email is invalid";
+      err.email = "*email is invalid please enter email";
     }
     if (!values.password) {
-      err.password = "*password is required";
+      err.password = "*password is required please enter password";
     }
     return err;
   };

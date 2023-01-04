@@ -49,7 +49,7 @@ const Register = () => {
     }
     if (values.confirmPassword !== values.password) {
       console.log(values.confirmPassword, values.password);
-      err.confirmPassword = "*password does'nt matched!!!";
+      err.confirmPassword = "*password does'not matched!!!";
     }
     return err;
   };
